@@ -1,0 +1,45 @@
+:root {
+    --bg-size: 50;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-position: center;
+    background-size: calc(var(--bg-size) * 1px) calc(var(--bg-size) * 1px);
+    background-image:
+        linear-gradient(to right, lightskyblue 1px, transparent 1px),
+        linear-gradient(to bottom, lightskyblue 1px, transparent 1px);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+header ul {
+    display: flex;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+ul li {
+    list-style: none;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+}
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+footer {
+    padding: 1rem;
+}
+
